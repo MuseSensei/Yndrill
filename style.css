@@ -1,0 +1,1074 @@
+body{min-height: 100vh;
+    background: linear-gradient(45deg, #EDC6B1, #B7B7B7);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    margin: 0;
+    position: relative;}
+.fadein{animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}}
+.page{margin: 0 auto;
+    width: 90%;
+    padding: 8px 5% 4em;}
+.head{padding: 0.5em 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    border-style: outset;
+    border-color: #537188;
+    border-width: 5px;
+    background-color: #92adad67;
+    align-items: center;
+    justify-content: center;}
+footer{height: 4em;
+    width: 100vw;
+
+    left: 0;
+    bottom: 0;
+background-color: #000000;
+margin-top: 1em;
+color: white;
+clear: both;
+}
+.foot_text a{font-size: small;
+    color: white;
+}
+.foot_text a:visited{color: white;}
+
+.sidebar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;}
+@font-face {
+    font-family: gabriela;
+    src: url(Gabriela-Regular.ttf);
+      }
+
+*{font-family: gabriela;}
+abbr{text-decoration: none;}
+
+/* ---------------SIDEBARRE ----------------- */
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    min-width: 130px;
+    max-width: 200px;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #edc6b1, #b7b7b7);
+    border-right: 10px double #537188;
+    flex-direction: column;
+    line-height: 10vh;
+    transform: translateX(-100%);
+    transition: transform 1s;
+    padding: 1em 0 0;}
+
+.menu li a {
+    color: black;
+    text-decoration: none;}
+
+
+.toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position:fixed;
+    right: 13px;
+    top: 14px;
+    padding: 20px;
+    background-color: #ffffffab;
+    border-radius: 50%;}
+.ouvrir {display: block;}
+.fermer {display: none;}
+.open .ouvrir {display: none;}
+.open .fermer {display: block;}
+.open .menu {transform: translateX(0);}
+
+.menu .activepage{color: white;}
+
+#logo{max-width: 80%;
+    margin-left: 10%;}
+a{color: black;
+    text-decoration: none;}
+a:visited{color: black;}
+a:hover {
+    color: #422800;}
+.index-link{color: black;
+    display: block;}
+/* ----------------------ACCUEIL--------------------*/
+#index{width: 100vw;
+    margin: 0;
+    padding-top: 3em;
+    background-image: url(img/yndrill3.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;}
+#index-title{font-size: xx-large;
+    margin: 1em auto 2em;
+    text-shadow: #fff 2px 2px;}
+.index-text{background-color: rgba(182, 179, 179, 0.596);
+    width: 85%;
+    padding: 0.5em 3%;
+    margin: auto;
+    border-radius: 40px;}
+.index-test{width: 60%;
+    margin: 1.5em auto 0;
+    padding: 0 10px;}
+.index-grid2{width: 60%;
+    margin: 0 auto;
+    padding: 0 10px;}
+
+.button-74 {margin: 1em auto 2em;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;}
+.button-74:hover {
+    background-color: #fff;}
+.button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);}
+/* ------------------ LORE ------------------ */
+
+.lore-title{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    width: 95%;
+    height: 3.1em;
+    margin: 2em auto;
+    background-color: #fbeee0;
+    border-radius: 50px;
+    line-height: 1.1em;
+    box-shadow: #537188 4px 4px 0 0;
+    padding: 0.1em 2em;}
+
+.lore_icon{float: right;}
+.lore-icon{padding-left: 12px;}
+.lore-content{text-align: justify;
+    text-indent: 2em;}
+
+.lore-pic{width: 95%;
+    margin: 1em 2.5%;}
+
+/*---------------------TIMELINE-----------------*/
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 5% auto;}
+  
+.event {
+      background: #fff;
+      position: relative;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+        0 18px 36px -18px rgba(0, 0, 0, 0.3),
+        0 -12px 36px -8px rgba(0, 0, 0, 0.025);}
+  
+      .title {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+  
+        font-weight: 600;
+        color: #9251ac;
+        letter-spacing: 1.5px;}
+      .content {grid-column: 2;
+        padding: 20px;}
+      .date {
+        color: #f6a4ec;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 30% auto;
+        font-weight: 550;
+}
+      .frise-icon {
+        border-radius: 8px 0 0 8px;
+        outline:#000;
+        background: #9251ac;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1;
+        color: #9251ac;
+        padding: 20px;}
+  
+    .frise-icon i {
+        position: absolute;
+        top: 50%;
+        left:-73px;
+        font-size: 2.5rem;
+        transform: translateY(-50%);
+        border-radius: 50%;}
+      
+      .description {text-indent: 10px;}
+        .event:after {
+            content: "";
+            width: 2px;
+            height: 130%;
+            background: #9251ac;
+            position: absolute;
+            top: 52%;
+            transform: translateY(-50%);
+            left: -3.5rem;
+            z-index: -1;}
+      
+          .event:before {
+            content: "";
+            width: 5rem;
+            height: 5rem;
+            position: absolute;
+            background: #f6a4ec;
+            border-radius: 100%;
+            left: -6rem;
+            right: 90%;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 2px solid #9251ac;}
+        .type2 .date {color: #87bbfe;}
+      
+        .type2 .frise-icon {
+              background: #555ac0;
+              color: #555ac0;}
+        .type2 .title {
+              color: #555ac0;
+            }
+    
+        .type3 .date {
+              color: #aff1b6;
+            }
+      
+        .type3 .frise-icon {
+              background: #24b47e;
+              color: #24b47e;
+            }
+            .type3 .title {
+              color: #24b47e;}
+      
+    
+  
+
+
+/* ------------------ RACES ------------------ */
+.largebox1{width: 100%;
+    padding-top: 3%;
+    padding-right: 2.5%;
+    margin-bottom: 7vh;}
+.box1{width: 100%;
+    background-color: lavender;
+    outline: solid black;
+    height: 28vh;
+    margin-bottom: 3%;
+    padding-top: 0.2%;
+    border-radius: 40px;}
+
+.largebox2{width: 100%;
+    padding-top: 3%;
+    padding-right: 2.5%;
+    margin-bottom: 7vh;}
+.largebox3{width: 100%;
+    padding-top: 3%;
+    padding-right: 2.5%;
+    margin-bottom: 7vh;}
+
+.sep{width: 60%;
+    height: 5px;
+    margin: 3% auto;
+    border: 3px solid #537188;
+    border-radius: 5px;
+background-color: #fbeee0;}
+.races_anchors{word-spacing: 5rem;}
+
+.titre{text-align: center;
+    font-size: xx-large;}
+.sous-titre{text-align: center;
+    width: 80%;
+margin: 2vh auto;}
+.to{text-align: center;
+    background-color: #66CDAA;}
+.nom{margin: 4% auto 1%;
+    width: 90%;
+    border-radius: 90% / 100%;
+font-size: 1rem;}
+.nm{text-align: center;
+    background-color: #D2B48C;}
+.tdt{text-align: center;
+    background-color: #5d528d;}
+.bd{text-align: center;
+    background-color:#f3f323;}
+.arch{text-align: center;
+    background-color: #DB7093;}
+.all{text-align: center;
+    background-color: rgb(173, 171, 171);}
+.nmarch{text-align: center;
+    background-image: url(img/card.png);
+    background-position: center;
+    background-color: #D2B48C;}
+.toarch{text-align: center;
+    background-image: url(img/card.png);
+    background-position: center;
+    background-color: #66CDAA;}
+
+.raceplaces{margin: 0.5%;
+padding: 0.4%;
+line-height: 2;
+outline: 2px solid black;}
+.text-center{text-align: center;}
+.smalltext{font-size: 0.80em;}
+/*--------------------- RACES CARTES --------------------------------------------*/
+.card-header{background-repeat: no-repeat;
+    margin-top: 2.5%;
+    border-radius: 30px 30px 0 0;
+    height: 75%;
+    width: 95%;
+    outline: solid LightSlateGray;
+    margin-left: 2.5%;}
+#elf-card{background-image: url(img/races_elfe1.jpg);
+    background-size: cover;
+    background-position: center;}
+#darkelf-card{background-image: url(img/races_darkelf.png);
+    background-size: cover;
+    background-position: top;}
+#moonelf-card{background-image: url(img/moonelf3.jpg);
+    background-size: cover;
+    background-position: center 20%;}
+#draco-card{background-image: url(img/races_draco1.jpg);
+    background-size: cover;
+    background-position: center 30%;}
+#dwarf-card{background-image: url(img/races_nain1.jpg);
+    background-size: cover;
+    background-position: left 23%;}
+#human-card{background-image: url(img/races_hum1.jpg);
+    background-size: cover;
+    background-position: left 5%;}
+#gob-card{background-image: url(img/races_gob.png);
+    background-size: cover;
+    background-position: center 15%;}
+#troll-card{background-image: url(img/races_troll2.jpg);
+    background-size: cover;
+    background-position: center 30%;}
+#tauren-card{background-image: url(img/races_tauren.jpg);
+    background-size: cover;
+    background-position: center 25%;}
+#naga-card{background-image: url(img/races_naga.png);
+    background-size: 120%;
+    background-position: center 10%;}
+#medus-card{background-image: url(img/races_medus.png);
+    background-size: cover;
+    background-position: center;}
+#halfhum-card{background-image: url(img/races_halfhum.png);
+    background-size: cover;
+    background-position: center;}
+#fairy-card{background-image: url(img/races_artificiel.png);
+    background-size: 120%;
+    background-position: 10% 20%;}
+#angel-card{background-image: url(img/races_angel3.jpg);
+    background-size: 170%;
+    background-position: center 15%;}
+#archangel-card{background-image: url(img/races_archangelcard.jpg);
+    background-size: 170%;
+    background-position: center 35%;}
+#heraut-card{background-image: url(img/races_heraut1.png);
+    background-size: cover;
+    background-position: center 5%;}
+#werewolf-card{background-image: url(img/races_wolf.png);
+    background-size: cover;
+    background-position: center 10%;}
+#vampire-card{background-image: url(img/races_vampire2.png);
+    background-size: 120%;
+    background-position: center 10%;}
+#undead-card{background-image: url(img/races_undead2.png);
+    background-size: cover;
+    background-position: center 40%;}
+#demon-card{background-image: url(img/races_demon3.jpg);
+    background-size: 110%;
+    background-position: top;}
+#draenei-card{background-image: url(img/races_draenei2.png);
+    background-size: cover;
+    background-position: top;}
+#hybrid-card{background-image: url(img/races_hybrid.jpg);
+    background-size: cover;
+    background-position: center;}
+
+#stat-corrompu{background-image: url(img/races_corrompu3.jpg);
+    background-size: cover;
+    background-position: center 20%;}
+#stat-awaken{background-image: url(img/races_awaken.jpg);
+    background-size: cover;
+    background-position: center 10%;}
+#stat-einherjar{background-image: url(img/races_einherjar2.png);
+    background-size: 120%;
+    background-position: center 40%;}
+#rel-lor{background-image: url(img/originel2.png);
+    background-size: cover;
+    background-position: center 10%;}
+#rel-ysii{background-image: url(img/ysiiri.png);
+    background-size: cover;
+    background-position: center 20%;}
+#rel-gaar{background-image: url(img/races_gaar.png);
+    background-size: cover;
+    background-position: center 20%;}
+#rel-astra{background-image: url(img/races_astra.jpg);
+    background-size: 120%;
+    background-position: center;}
+#rel-draco{background-image: url(img/rel-desi.png);
+    background-size: cover;
+    background-position: center;}
+#rel-naga{background-image: url(img/races_myzias.jpg);
+    background-size: cover;
+    background-position: center;}
+
+#affil_archimag{background-image: url(img/affil_archimag.jpg);
+background-size: cover;
+background-position: center;}
+#affil_justicier{background-image: url(img/affil_justicier.jpg);
+    background-size: cover;
+    background-position: center;}
+#affil_guildmarch{background-image: url(img/affil_guildmarch.jpg);
+    background-size: cover;
+    background-position: center;}
+#affil_nalvoht{background-image: url(img/affil_nalvoht.jpg);
+    background-size: cover;
+    background-position: center;}
+#affil_gueule{background-image: url(img/affil_gueule.jpg);
+    background-size: cover;
+    background-position: center;}
+#affil_arias{background-image: url(img/affil_arias.jpg);
+    background-size: cover;
+    background-position: center;}
+#affil_eclipse{background-image: url(img/affil_eclipse.jpg);
+    background-size: cover;
+    background-position: center;}
+#affil_inqui{background-image: url(img/affil_inqui.png);
+    background-size: cover;
+    background-position: top;}    
+#affil_hunter{background-image: url(img/affil_hunter.png);
+    background-size: cover;
+    background-position: center;}
+
+.next_arrow{float:right;
+line-height: 2em;
+font-size: small;}
+.previous_arrow{float:left;
+line-height: 2em;
+font-size: small;}
+    
+
+/*-----------------------------RACES 2----------------------*/
+
+
+.races2_container{width: 100%;
+    height: fit-content;
+    outline: solid black;
+    margin-top: 4%;}
+.races2_container_inside{width: 100%;
+margin: 0;
+padding: 0;
+background-image: url(img/fondtest.png);
+background-size: auto;}
+.race2_titre{padding-bottom: 1em;
+    text-indent: 1em;}
+.races2_sous_titre{padding-bottom: 0.5em;
+    text-indent: 0.8em;
+    text-decoration: underline;
+    margin: 2em;}
+.statbar{width: 100%;}
+.stat_name{margin: 1em 0 0;
+text-indent: 2em;}
+.mount{width: 90%;
+margin: 1em 5%;}
+.imgraces2{width: 95%;
+margin: 0.5em 2.5%;}
+#margwal{width: 60%;
+margin: 0.5em 20% 0.1em;}
+.icons{height: 1.1em;}
+
+.archman{color: darkred;}
+.fee{color: purple;}
+.homonc{color: green;}
+.nymph{color: orangered;}
+.race_padding{padding: 0 5% 4%;
+    text-align: justify;}
+.race-pic{width: 100%;}
+.hyb-yes{background-color: #00cc00;}
+.hyb-no{background-color: #cc0000;}
+.hyb-maybe{background-color: #ff9900;
+background-image: url(img/card.png);
+background-size: cover;}
+.rep-no{background-color:#999999;}
+
+/*--------------------------------BESTIAIRE----------------------*/
+
+.besti_1{width: 100%;
+    min-height: 30vh;
+outline: solid #070b42;
+border-radius: 40px;
+background-color: lavender;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;    
+box-sizing: border-box;
+padding: 0.5em 2em;
+margin: 2em 0;
+font-size: small;}
+.besti_3{outline: dashed #070b42;}
+
+.best_button_pic_container{width: 100%;
+max-height: 70px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 100%;
+    column-gap: 2%;
+    margin-bottom: 1em;
+}
+.best_button_pic1{grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;}
+.best_button_pic2{grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+height: 100%;
+    border-radius: 20px;
+    object-fit: cover;}
+.best_button_pic3{grid-column: 3;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.besti_title{text-indent: 2em;
+margin: 2em 0 1em;}
+.besti_head{text-indent: 2em;
+margin-bottom: 1.5em;}
+.besti_grid_container{width: 100%;
+    margin: 2em 0;
+display: grid;
+grid-template-columns: 30% 35% 35%;
+font-size: small;}
+.besti_grid_item1{border-right: 1px solid black;}
+.besti_grid_item2{border-left: 1px solid black;}
+.best_tab_title{font-size: 1.5em;
+font-weight: bold;
+margin: 1em;
+text-transform: uppercase;}
+.best_stat_name{margin-bottom: 0;
+    text-indent: 2em;}
+.best_pic{width: 100%;}
+.best_tab{font-size: small;}
+.tab_best{cursor: pointer;
+    padding: 10px 12px;
+    background: #32557f;
+    display: inline-block;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;}
+.tab-unic{background-color:#faab78;}
+.tab-epic{background-color: #FFD495;}
+.tab-rare{background-color: #FFFBAC;}
+.tab-comm{background-color: #D7E9B9;}
+#one:checked ~ .tabs_best #one-tab {
+    border-top: 3px solid #C47C5E;}
+#two:checked ~ .tabs_best #two-tab {
+    border-top: 3px solid #CCAA76;}
+#three:checked ~ .tabs_best #three-tab {
+    border-top: 3px solid #e4d37f;}
+#four:checked ~ .tabs_best #four-tab {
+  border-top: 3px solid #BCC47E;}
+
+.panels_best{background: #fff;
+    background-size: auto;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height: 200px;
+    width: 100vw;
+    max-width: 500px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 1em;}
+.panel_best{margin-top: 0;
+    padding: 20px;
+    display: none;
+    animation: fadein 0.8s;}
+  
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}}
+
+#one:checked ~ .panels_best #one-panel {display: block;
+    background-image: url(img/best_top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;}
+#two:checked ~ .panels_best #two-panel {display: block;
+    background-image: url(img/best_top_two.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;}
+#three:checked ~ .panels_best #three-panel {display: block;
+    background-image: url(img/best_top_three.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;}
+#four:checked ~ .panels_best #four-panel {display: block;
+    background-image: url(img/best_top_four.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;}
+#five:checked ~ .panels_best #five-panel {display: block;
+    background-image: url(img/best_top_one.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;}
+.best_container{min-height: 150px;
+    outline: dashed 2px black;
+    padding: 1em;
+    margin-top: 2em;}
+.best_empty{text-align: center;
+    font-size: large;}
+.best_grid{width: 100%;
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    font-size: small;}
+.best_grid_menu{padding: 4px;}
+.best_grid_pic{height: auto;
+    max-width: 100%;
+    margin: 0;}
+.best_grid_txt{text-align: center;
+    margin: 0;}
+
+/*---------PNJ-------*/
+#one:checked ~ .tabs_best #tdt-tab {
+    border-top: 3px solid #483f72;}
+#two:checked ~ .tabs_best #nm-tab {
+    border-top: 3px solid #af9067;}
+#three:checked ~ .tabs_best #to-tab {
+    border-top: 3px solid #419176;}
+#four:checked ~ .tabs_best #arch-tab {
+    border-top: 3px solid #aa4c6b;}
+#five:checked ~ .tabs_best #bd-tab {
+    border-top: 3px solid rgb(173, 187, 84);}
+
+#one:checked ~ .panels_best #tdt-panel {display: block;
+        background-image: url(img/best_top_tdt.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;}
+#two:checked ~ .panels_best #nm-panel {display: block;
+        background-image: url(img/best_top_nm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;}
+#three:checked ~ .panels_best #to-panel {display: block;
+        background-image: url(img/best_top_to.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;}
+#four:checked ~ .panels_best #arch-panel {display: block;
+        background-image: url(img/best_top_arch.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;}
+#five:checked ~ .panels_best #bd-panel {display: block;
+        background-image: url(img/best_top_bd.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;}
+
+
+/*---------------------MAP-----------------*/
+
+.map{width: 100%;}
+
+
+.warpper{display: flex;
+    flex-direction: column;
+    align-items: center;}
+  
+.tab{cursor: pointer;
+    padding: 10px 17px;
+    background: #32557f;
+    display: inline-block;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;}
+.tab-tdt{background-color:#5d528d;}
+.tab-nm{background-color: #D2B48C;}
+.tab-to{background-color: #66CDAA;}
+.tab-arch{background-color: #DB7093;}
+.tab-bd{background-color: #f3f323;}
+  
+.panels{background: #fff;
+    box-shadow: 0 2rem 2rem #00000080;
+    min-height: 200px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 20px;}
+.panel{
+    display: none;
+    animation: fadein 0.8s;}
+  
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}}
+
+.map-tab-title{font-size: 1.5em;
+    font-weight: bold;}
+.radio {display: none;}
+  
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel,
+  #four:checked ~ .panels #four-panel,
+  #five:checked ~ .panels #five-panel {
+    display: block;}
+  
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab,
+  #four:checked ~ .tabs #four-tab,
+  #five:checked ~ .tabs #five-tab {
+    background: #fff;
+    color: #000;
+    border-top: 3px solid #32557f;}
+
+/*------------ SYSTEME RP----------------*/
+.syst_pic{width: 100%;}
+.syst_forum{display: none;}
+.syst_title{text-indent: 2em;}
+.syst_subtitle{text-indent: 1em;}
+.fishe{font-size: larger;
+text-indent: 3em;
+border: 2px solid black;
+background-color: #9ebfd3;
+border-radius: 40px;
+padding: 5px;
+line-height: 2em;
+margin: 3em;}
+.shop_level{text-decoration: underline;}
+/*-------------------CREDIT--------------*/
+#discord{width: 60%;
+    height: 3em;
+    padding-top: 2em;
+margin: 10% auto;
+outline: solid black;
+background-color: lightblue;
+font-size: normal;
+font-weight: 600;
+border-radius: 50px;}
+
+
+/*-----------------------------------------PC---------------------------------------------*/
+@media only screen and (min-width: 1000px){
+    .page{width: 60vw;
+        max-width: 1920px;
+        float: right;
+        margin: 5vh 7.5vw 0;
+        font-size: 15px;}
+    .head{padding: 0.5em 2em;}
+    footer{bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 200px;}
+    .sidebar{
+        width: 10vw;
+        max-height: 100vh;
+        padding-top: 2%;
+        position:fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;}
+    .toggle{display: none}
+    .menu{display: block;
+        transform: none;
+        transition: none;
+        max-width: 200px;
+        text-align: center;
+        font-size: 1.4em;
+        line-height: 1em;
+    padding: 0;}
+    .menu li{margin-bottom: 3.5em;}
+    #logo{max-width: 80%;;
+        margin: 50px auto 0;}
+/*-----------INDEEX PC---------*/
+    #sidebar-index-pc{display: none;}
+    #index{width: 100%;
+        max-height: 100vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;}
+    #index-title{font-size: 4em;
+        margin: 1em auto 1em;}
+    .index-text{width: 50%;
+        min-width: 650px;
+        max-width: 850px;}
+    .index-test{display: grid;
+        grid-template-rows: 3;
+    margin: 2em auto;}
+    .index-grid2{display: grid;
+        grid-template-rows: 2;
+        width: 40%;
+        margin-top: 3em;}
+    .button-74{font-size: 20px;
+        min-height: 3em;
+        width: 20%;
+        min-width: 200px;
+        padding: 0 20px;}
+    .index1{grid-row: 1;
+        margin: 1em auto;}
+
+    .index2{grid-row:1;
+        margin: 1em auto;}
+
+    .index4{width: 10%;
+        min-width: 150px;
+        position:fixed;
+        top: 0;
+        left: 0;
+        margin: 2em;
+        font-size: small;
+        line-height: 1.5em;}
+    #index-pres{width: 60vw;
+        margin: 4em auto;}
+
+/*-----------LORE PC---------*/
+    .lore-grid-container1{display: grid;
+        grid-template-columns: auto 55%;
+        grid-template-rows: 4fr;
+        gap: 10px;
+    margin: 25px 0;}
+    .lore-grid1-item1{grid-column: 1;
+        grid-row: 1;
+        margin: auto;}
+    .lore-grid1-item2{grid-column: 1;
+        grid-row: 3;
+        margin: auto;}
+    .lore-grid1-item3{grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 0 10px;}
+    .lore-grid1-item4{grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        padding: 0 10px;}
+    .lore-grid1-item5{grid-column: 1;
+        grid-row: 2;}
+
+    .lore-grid-container2{display: grid;
+        grid-template-columns: 55% auto;
+        grid-template-rows: 2;
+        gap: 10px;
+        margin: 25px 0;}
+    .lore-grid2-item1{grid-column: 1;
+        grid-row: 1;
+        padding: 0 10px;}
+    .lore-grid2-item2{grid-column: 2;
+        grid-row: 1;
+        margin: auto;}
+    .lore-grid2-item3{grid-column: 1;
+        grid-row: 2;
+        padding: 0 10px;}
+    .lore-grid2-item4{grid-column: 2;
+        grid-row: 2;
+    margin: auto;}
+
+    .lore-title{margin: 1em auto 2em;
+    line-height: 0.9em;}
+    .lore-pc1{object-fit: contain;
+        height: 400px;}
+    .lore-pc2{object-fit: contain;
+        width: 400px;}
+
+
+    .cosmog{
+            float:right;
+            border-left: 5px solid #537188;
+            border-right: 5px solid #537188;
+            border-radius: 30px;
+            padding: 0 1em;
+            margin:0;}
+
+
+/*----------RACES PC----------*/
+    .largebox1{width: 100%;
+        padding-top: 1%;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 0;}
+    .largebox2{width: 100%;
+        padding-top: 3%;
+        margin-bottom: 7vh;}
+    .box1{width: 30%;
+        height: 30vh;
+        float: left;
+        margin-left: 2.5%;
+        margin-bottom: 3%;}
+    .box2{margin-left:35%}
+    .nom{margin: 1em auto 1%;
+        width: 90%;
+        border-radius: 90% / 100%;}
+    .sep{width: 60%;
+        border-radius: 5px;}
+    .titre{margin-bottom: 3%;
+        margin-top: 0;}
+    .raceplaces{font-size: larger;}
+    .card-header{
+        margin-top: 1.75%;
+        border-radius: 35px 35px 0 0;}
+
+    #naga-card{background-size: 160%;
+        background-position: center 10%;}
+    #fairy-card{background-size: 160%;
+        background-position: 30% 50%;}
+    #undead-card{background-size: cover;
+        background-position: 30% 40%;}
+    #vampire-card{background-size: 160%;
+        background-position: center 10%;}
+    #demon-card{background-size: 130%;
+        background-position: 30% 50%;}
+    #rel-astra{background-size: 160%;
+        background-position: center;}
+
+    .races2_container{width: 70%;
+        min-width: 600px;
+        margin: 4% auto;}
+    .races2_container_inside{background-size: cover;}
+    .race-stat{width: 45%;
+        float: right;
+        border-left: 5px solid #070b42;
+        border-right: 5px solid #070b42;
+        border-radius: 30px;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 2em;
+        margin-left: 1em;}
+    .race-stat2{width: 45%;
+        height: 18vh;
+        float: left;
+        padding-top: 1em;
+        margin-bottom: 2em;}
+    .stat_name{margin-top: 0;}
+    .races2_sous_titre{padding-bottom: 0.5em;
+        text-indent: 5em;}
+
+    .next_arrow{float:right;
+        margin-right: 2em;
+        line-height: 2em;}
+        .previous_arrow{float:left;
+        margin-left: 2em;
+        line-height: 2em;}
+/*------------------------BESTIAIRE PC-----------*/
+    .besti_grid_container{width: 70%;
+        margin: 2em auto;}
+    .besti_type_grid_container{display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1;}
+    .besti_1{grid-column: 1;
+        grid-row: 1;
+        width: 95%;
+        min-height: 250px;
+        margin: 2.5% 2.5%;}
+    .besti_2{grid-column: 2;
+        grid-row: 1;}
+
+    .tab_best{
+        padding: 10px 24px;
+        font-size:medium;}
+    .panels_best{min-width: 100%;}
+    .panel_best{padding: 60px;}
+    .best_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,fr);}
+    .best_tab_title{font-size: 2em;
+        text-indent: 2em;}
+    .best_grid{display: none;}
+    .best_pic{
+        grid-column: 1;
+        grid-row: 1;}
+    .best_grid_text1{margin-left: 5%;
+        grid-column: 2;
+        grid-row: 1;}
+    .best_grid_text2{grid-column: 1;
+        grid-row: 2 / 3;}
+    .best_grid_text2>p{text-indent: 4em;}
+    .best_grid_text3{grid-column: 2;
+        grid-row: 2;
+        margin-left: 5%;}
+    .best-stat{width: 60%;
+        line-height: 0.8em;
+        border-left: 3px solid #070b42;
+        border-right: 3px solid #070b42;
+        border-radius: 30px;
+        padding: 0.5em 1em;
+        margin: 0 auto;}
+/*--------------------MAP PC-------------*/
+    .panels{
+        max-width: 900px;
+        border-radius: 10px;}
+    .img-magnifier-container {
+        position: relative;}
+      
+      .img-magnifier-glass {
+        position: absolute;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        cursor: none;
+        /*Set the size of the magnifier glass:*/
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        transition: opacity 0.2s;}
+      .img-magnifier-glass:hover{opacity:1;}
+    
+    
+
+/*------------------SYSTEME RP PC-------*/
+.syst_pic{width:50%;}
+.syst_pic2{float:right;
+margin-left: 1em;}
+
+
+
+
+
+}
